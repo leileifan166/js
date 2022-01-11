@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function callTwice(func){
+            func();
+            func();
+            func();
+            func();
+
+        }
+        function rollDie(){
+            const roll = Math.floor(Math.random() * 6) + 1;
+            console.log(roll);
+            console.log('伊藤さん');
+        }
+        callTwice(rollDie);
+       
+    </script>
+    
+</body>
+</html>
